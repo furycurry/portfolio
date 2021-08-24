@@ -1,0 +1,20 @@
+body {
+    background-color: #eeeded;
+}
+
+hr {
+    background-color: #eeeded;
+    border-style: dotted none none;
+    border-color: gray;
+    border-width: 5px;
+    width: 6%;
+}
+
+h1 {
+    font-family: 'Helvetica', 'Courier New';
+    color: #778fa7;
+}
+
+h3 {
+    color: #778fa7;
+}
