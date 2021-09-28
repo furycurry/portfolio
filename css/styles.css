@@ -20,31 +20,44 @@ h1 {
     width: max-content;
 }
 
-.intro {
-    display: flex;
-    color: #ffffff;
-
+#typing {
+    width: 0ch;
+    color: white;
+    float: left;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    font-weight:bold;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 6s steps(30) 1.5s infinite alternate;
 }
 
-.typing {
-    position: relative;
-    margin-left: 18px;
+#typing span {
+    color:rgb(86, 207, 255);
 }
 
-.typing::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 84%;
-    border-right: 2px solid white;
-    animation: blink 0.4s infinite ease;
+#crow {
+    float: left;
+    color: white;
+    font-family: consolas;
+    font-weight:bold;
+    font-size: 45px;
+    animation: crow 0.45s linear 0s infinite;
 }
 
-@keyframes blink {
-    0% {
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 30ch;
+    }
+}
+@keyframes crow {
+    from {
         opacity: 0;
     }
-    100% {
+    to {
         opacity: 1;
     }
 }
